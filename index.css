@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c61066;
+}
+form{
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    fieldset{
+        border: 1px solid #DDDDDD;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 16px ;
+        /* para o gap funcionar, deve ser usado as 3 propriedades (display: flex; flex-direction; gap; */
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+        legend{
+            padding: 6px 16px;
+            background-color: #c61065ba;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .linha{
+            display: flex;
+            gap: 16px;
+            .coluna{
+                flex: 1;
+                label{
+                    display: block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color:#666666;
+                    margin-bottom: 4px;
+                }
+                input, select{
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 5px;
+                    padding-left: 10px;
+                }
+        
+            }
+        }
+    }
+    button{
+        height: 40px;
+        padding: 0 26px;
+        background-color: #c61066;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        float:right;
+
+    }
+}
